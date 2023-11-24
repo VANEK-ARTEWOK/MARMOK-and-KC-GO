@@ -1,0 +1,225 @@
+
+
+#include "TXLib.h"
+
+void drawMeed()
+{
+    //ÌÂ·Ó
+    txSetColor (TX_BLUE);
+    txSetFillColor (TX_BLUE);
+    txRectangle (0, 0, 805, 605);
+    //ÓÒÙÎ¸Ú
+    txSetColor (TX_GRAY);
+    txSetFillColor (TX_GRAY);
+    txRectangle (0, 425,805,605);
+    //‚ÓÓÚ‡
+    txSetColor (TX_ORANGE);
+    txSetFillColor (TX_ORANGE);
+    txRectangle (0,85,260,420);
+    txRectangle (470,420,805,80);
+    txRectangle (255,125,470,60);
+    txSetColor (TX_BLACK);
+    txSetFillColor (TX_BLACK);
+
+    txRectangle(465,125,385,420);
+    txRectangle (255,125,335,420);
+    //„‡ÙËÚË
+    txSetColor (TX_BLUE);
+    txSetFillColor (TX_BLUE);
+    txRectangle(560,150,730,180);
+    txSetColor (TX_WHITE);
+    txSetFillColor (TX_WHITE);
+    txRectangle(560,150,730,120);
+    txSetColor (TX_RED);
+    txSetFillColor (TX_RED);
+    txRectangle(560,172,730,200);
+    //·Ó˜Í‡
+    txSetColor(TX_RED);
+    txSetFillColor (TX_RED);
+    txRectangle(80,310,180,470);
+
+}
+/*
+void drawFon()
+{
+
+}
+
+
+*/
+void drawKt(int x)
+{
+ txSetColor(TX_YELLOW, 3);
+    txSetFillColor(TX_YELLOW);
+    txCircle(x,450,15);
+    txSetColor(TX_BLUE,5);
+    txSetFillColor(TX_BLUE);
+    txLine(x,470,x,500);
+    txLine(x,470,x-20,480);
+    txLine(x,470,x+20,480);
+    txSetColor(TX_BLACK,5);
+    txSetFillColor(TX_BLACK);
+    txLine(x-20,480,x-20,505);
+    txLine(x+20,480,x+52,480);
+    txLine(x,500,x-20,525);
+    txLine(x,500,x+20,530);
+    txLine(x-20,525,x-20,555);
+    txLine(x+20,530,x+20,555);
+}
+
+void drawKnife(int x)
+{
+
+    txSetColor(TX_BLUE,5);
+    txSetFillColor(TX_BLUE);
+    POINT knife[3] = {{x,435 }, {x,475 }, {x+2, 475}};
+    txPolygon (knife,3);
+    txSetColor(TX_GREEN,5);
+    txSetFillColor(TX_GREEN);
+    txLine(x,475,x,490);
+    txLine(x-5,475,x+5,475);
+}
+void drawAkr2(HDC Akr2)
+{
+    txTransparentBlt (txDC(), 690, 408 , 98, 25 ,Akr2, 0, 0, TX_WHITE);
+}
+
+void drawMarmok()
+{
+    txSetColor(TX_YELLOW, 3);
+    txSetFillColor(TX_YELLOW);
+    txCircle(690,405,15);
+    txLine(670,430,670,460);
+    txLine(710,430,730,430);
+    txSetColor(TX_RED,5);
+    txSetFillColor(TX_RED);
+    txLine(690,420,690,450);
+    txLine(690,420,670,430);
+    txLine(690,420,710,430);
+    txSetColor(TX_BLACK,5);
+    txSetFillColor(TX_BLACK);
+    txLine(690,450,680,485);
+    txLine(690,450,710,485);
+    txLine(680,485,680,510);
+    txLine(710,485,710,510);
+
+    txDrawText(10,390,250,430,"≈˘∏ Ó‰ËÌ ËÁË Ù‡„ :3");
+
+}
+void drawMarmok2()
+{
+    txSetColor(TX_YELLOW, 3);
+    txSetFillColor(TX_YELLOW);
+    txCircle(690,410,15);
+    txLine(670,435,640,445);
+    txLine(710,435,710,465);
+    txSetColor(TX_RED,5);
+    txSetFillColor(TX_RED);
+    txLine(690,425,690,455);
+    txLine(690,425,670,435);
+    txLine(690,425,710,435);
+    txSetColor(TX_BLACK,5);
+    txSetFillColor(TX_BLACK);
+    txLine(690,455,680,490);
+    txLine(690,455,710,490);
+    txLine(680,490,680,515);
+    txLine(710,490,710,515);
+   txSetColor(TX_GREEN, 3);
+   txDrawText(595,375,780,410," ¿ Œ¬¿¿!!!");
+   txDrawText(600,435,765,460,"—“¿À ≈≈– D:");
+}
+void drawDiologKt()
+ {
+txDrawText(10,390,250,430,"≈˘∏ Ó‰ËÌ ËÁË Ù‡„ :3");
+ }
+
+void drawAkr(HDC Akr)
+{
+    txTransparentBlt (txDC(), 610, 428 , 98, 25  ,Akr, 0, 0, TX_WHITE);
+   txSetColor(TX_GREEN, 3);
+   txDrawText(595,375,780,410," ¿ Œ¬¿¿!!!");
+   txDrawText(600,435,765,460,"—“¿À ≈≈– D:");
+}
+/*
+void drawKtDied()
+{
+    txSetColor(TX_YELLOW, 3);
+    txSetFillColor(TX_YELLOW);
+    txCircle(570,490,15);
+    txSetColor(TX_BLUE,5);
+    txSetFillColor(TX_BLUE);
+    txLine(x,470,x,500);
+    txLine(x,470,x-20,480);
+    txLine(x,470,x+20,480);
+    txSetColor(TX_BLACK,5);
+    txSetFillColor(TX_BLACK);
+    txLine(x-20,480,x-20,505);
+    txLine(x+20,480,x+52,480);
+    txLine(x,500,x-20,525);
+    txLine(x,500,x+20,530);
+    txLine(x-20,525,x-20,555);
+    txLine(x+20,530,x+20,555);
+
+}
+  */
+
+
+
+int main()
+    {
+    txCreateWindow (805, 605);
+
+
+
+
+
+    int xKnife = 83 ;
+    int xKt = 26 ;
+
+    HDC Akr2 = txLoadImage (" ŒÀ¿ÿ2.bmp");
+    HDC Akr = txLoadImage (" ŒÀ¿ÿ.bmp");
+    while(xKt<545)
+    {
+    
+    drawMeed();
+    drawAkr2(Akr2);
+    drawMarmok();
+    drawKt(xKt);
+    drawKnife(xKnife);
+    drawDiologKt(
+    }
+    
+    
+    {
+
+
+    drawMeed();
+    drawAkr2(Akr2);
+    drawMarmok();
+    drawKt(xKt);
+    drawKnife(xKnife);
+
+    xKt=xKt + 5;
+    xKnife = xKnife + 5;
+
+    txSleep(100);
+
+
+    }
+
+    {
+     drawMeed();
+     drawMarmok2();
+     drawAkr(Akr);
+     drawKt(xKt);
+     drawKnife(xKnife);
+     txSleep(300);
+
+    }
+
+
+    txDeleteDC(Akr);
+    txTextCursor (false);
+    return 0;
+    }
+
