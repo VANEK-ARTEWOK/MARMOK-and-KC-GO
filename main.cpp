@@ -243,18 +243,18 @@ void drawTytru()
    txLine(460,240,515,535);
 
 }
-void drawTexttytru()
+void drawTexttytru(int y)
 {
    txSetColor(TX_GREEN, 3);
-   txDrawText(200,40,550,90,"яонмянп-HAZBIHcompany");
+   txDrawText(200,y-300,550,y-250,"яонмянп-HAZBIHcompany");
    txSetColor(TX_BLUE, 3);
-   txDrawText(200,375,780,410,"яжсмюпхяр-бюмей_юпреьнй");
+   txDrawText(200,y-200,550,y-150,"яжсмюпхяр-бюмей_юпреьнй");
    txSetColor(TX_GRAY, 3);
-   txDrawText(200,375,780,410,"ютрнп хдех-лЮПХМ");
+   txDrawText(200,y-50,550,y,"ютрнп хдех-лЮПХМ(лЮПЛНЙ)");
    txSetColor(TX_RED, 3);
-   txDrawText(200,375,780,410,"юмхлюрнп-бюмей_юпреьнй");
+   txDrawText(210,y-100,560,y-50,"юмхлюрнп-бюмей_юпреьнй");
    txSetColor(TX_PINK, 3);
-   txDrawText(200,375,780,410,"усднфмхй-лсдъ");
+   txDrawText(200,y+100,550,y+150,"усднфмхй-лEдъ");
 
 }
 int main()
@@ -262,8 +262,7 @@ int main()
     txCreateWindow (805, 605);
 
 
-
-
+    int yTexttytru = 300 ;
     int xTime = 0 ;
     int xKnife = 83 ;
     int xKt = 26 ;
@@ -324,20 +323,16 @@ int main()
 
     while(xKt<545)
     {
+        drawMeed();
+        drawAkr2(Akr2);
+        drawMarmok();
+        drawKt(xKt);
+        drawKnife(xKnife);
+        drawDiologMarmok();
+        xKt=xKt + 10;
+        xKnife = xKnife + 10;
 
-
-    drawMeed();
-    drawAkr2(Akr2);
-    drawMarmok();
-    drawKt(xKt);
-    drawKnife(xKnife);
-    drawDiologMarmok();
-    xKt=xKt + 10;
-    xKnife = xKnife + 10;
-
-    txSleep(300);
-
-
+        txSleep(300);
     }
 
     {
@@ -347,9 +342,6 @@ int main()
      drawAkr(Akr);
      drawKt(xKt);
      drawKnife(xKnife);
-
-
-
      txSleep(100);
 
     }
@@ -365,6 +357,7 @@ int main()
      txSleep(10000);
 
     }
+
     {
      drawTime(xTime);
      drawBeginning3(Beginning3);
@@ -379,20 +372,31 @@ int main()
 
      txSleep(100);
     }
+
     {
 
      drawMush(Mush);
 
      txSleep(2000);
     }
+    while(yTexttytru<1000)
     {
-    drawTytru();
-    txSleep(100);
+        drawTytru();
+        drawTexttytru(yTexttytru);
+
+        yTexttytru=yTexttytru + 5;
+
+        txSleep(100);
     }
-
-
-
+    txDeleteDC(Akr2);
     txDeleteDC(Akr);
+    txDeleteDC(Beginning3);
+    txDeleteDC(Beginning2);
+    txDeleteDC(Beginning);
+    txDeleteDC(Mush);
+    txDeleteDC(Avatar2);
+    txDeleteDC(Avatar);
+    txDeleteDC(Smile);
     txTextCursor (false);
     return 0;
     }
