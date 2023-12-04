@@ -257,6 +257,16 @@ void drawTexttytru(int y)
    txDrawText(200,y+100,550,y+150,"ХУДОЖНИК-МEДЯ");
 
 }
+void drawWiliam1(HDC Wiliam1)
+{
+ txTransparentBlt (txDC(), 565, 190 , 208, 243  ,Wiliam1, 0, 0, TX_WHITE);
+}
+void drawWiliam2(HDC Wiliam2)
+{
+ txTransparentBlt (txDC(), 565, 190 , 208, 243  ,Wiliam2, 0, 0, TX_WHITE);
+}
+
+
 int main()
     {
     txCreateWindow (805, 605);
@@ -266,7 +276,8 @@ int main()
     int xTime = 0 ;
     int xKnife = 83 ;
     int xKt = 26 ;
-
+    HDC Wiliam1 =txLoadImage ("бонни1bmp..bmp");
+    HDC Wiliam2 =txLoadImage ("бонни2bmp.bmp");
     HDC Smile = txLoadImage ("испуг.bmp");
     HDC Avatar2= txLoadImage ("смайл.bmp");
     HDC Avatar= txLoadImage ("аватарка.bmp");
@@ -382,7 +393,24 @@ int main()
     while(yTexttytru<1000)
     {
         drawTytru();
+        drawWiliam1(Wiliam1);
+        drawWiliam2(Wiliam2);
         drawTexttytru(yTexttytru);
+        drawWiliam1(Wiliam1);
+        txSleep(500);
+        drawWiliam2(Wiliam2);
+        txSleep(500);
+        drawWiliam1(Wiliam1);
+        txSleep(500);
+        drawWiliam2(Wiliam2);
+        txSleep(500);
+        drawWiliam1(Wiliam1);
+        txSleep(500);
+        drawWiliam2(Wiliam2);
+        txSleep(500);
+        drawWiliam1(Wiliam1);
+        txSleep(500);
+        drawWiliam2(Wiliam2);
 
         yTexttytru=yTexttytru + 5;
 
