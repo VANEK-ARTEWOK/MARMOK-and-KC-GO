@@ -262,8 +262,6 @@ void drawWiliam1(HDC Wiliam1)
  txTransparentBlt (txDC(), 0, 0 , 800, 600 ,Wiliam1, 0, 0, TX_BLACK);
 }
 
-
-
 int main()
     {
     txCreateWindow (805, 605);
@@ -275,7 +273,6 @@ int main()
     int xKt = 26 ;
 
     HDC Wiliam1 =txLoadImage ("N-TIMER(1).bmp");
-
     HDC Smile = txLoadImage ("испуг.bmp");
     HDC Avatar2= txLoadImage ("смайл.bmp");
     HDC Avatar= txLoadImage ("аватарка.bmp");
