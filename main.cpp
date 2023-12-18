@@ -10,7 +10,7 @@ void drawScreensaver()
     txSetColor (TX_RED);
     txSetFillColor (TX_RED);
     txDrawText(180,60,560,130,"HazbinCompany");
-    txDrawText(240,405,480,470,"œ–≈ƒ—“¿¬Àﬂ≈“");
+    txDrawText(240,405,480,470,"√è√ê√Ö√Ñ√ë√í√Ä√Ç√ã√ü√Ö√í");
 }
 void drawScreensaver2()
 {
@@ -19,8 +19,8 @@ void drawScreensaver2()
     txRectangle (0, 0, 805, 605);
     txSetColor (TX_RED);
     txSetFillColor (TX_RED);
-    txDrawText(180,60,560,130,"CÃ≈ÿÕ€≈,–ŒÕƒŒÃÕ€≈ ÃŒÃ≈Õ“€");
-    txDrawText(240,80,480,150,"»«  .—");
+    txDrawText(180,60,560,130,"C√å√Ö√ò√ç√õ√Ö,√ê√é√ç√Ñ√é√å√ç√õ√Ö √å√é√å√Ö√ç√í√õ");
+    txDrawText(240,80,480,150,"√à√á √ä.√ë");
 }
 void drawAvatar(HDC Avatar)
 {
@@ -32,15 +32,15 @@ void drawAvatar2(HDC Avatar2)
 }
 void drawMeed()
 {
-    //ÌÂ·Ó
+    //√≠√•√°√Æ
     txSetColor (TX_BLUE);
     txSetFillColor (TX_BLUE);
     txRectangle (0, 0, 805, 605);
-    //aÒÙÎ¸Ú
+    //a√±√¥√´√º√≤
     txSetColor (TX_GRAY);
     txSetFillColor (TX_GRAY);
     txRectangle (0, 425,805,605);
-    //‚ÓÓÚ‡
+    //√¢√Æ√∞√Æ√≤√†
     txSetColor (TX_ORANGE);
     txSetFillColor (TX_ORANGE);
     txRectangle (0,85,260,420);
@@ -51,7 +51,7 @@ void drawMeed()
 
     txRectangle(465,125,385,420);
     txRectangle (255,125,335,420);
-    //„‡ÙËÚË
+    //√£√∞√†√¥√®√≤√®
     txSetColor (TX_BLUE);
     txSetFillColor (TX_BLUE);
     txRectangle(560,150,730,180);
@@ -66,7 +66,7 @@ void drawMeed()
     txCircle(545,500,70);
     txSetColor(TX_RED,10);
     txDrawText(505,450,600,550,"B");
-    //·Ó˜Í‡
+    //√°√Æ√∑√™√†
     txSetColor(TX_RED);
     txSetFillColor (TX_RED);
     txRectangle(80,310,180,470);
@@ -160,7 +160,7 @@ void drawMarmok2()
 }
 void drawDiologKt()
  {
-txDrawText(10,390,250,430,"≈˘∏ Ó‰ËÌ ËÁË Ù‡„ :3");
+txDrawText(10,390,250,430,"√Ö√π¬∏ √Æ√§√®√≠ √®√ß√® √¥√∞√†√£ :3");
  }
 
 void drawAkr(HDC Akr)
@@ -208,13 +208,13 @@ void drawKtDied()
     txLine(517,484,500,500);
     txLine(500,475,515,455);
     txLine(500,500,470,490);
-    txTextOut(560,490,"’-’");
+    txTextOut(560,490,"√ï-√ï");
 }
 
 void drawDiologMarmok()
  {
    txSetColor(TX_GREEN, 3);
-   txDrawText(595,375,780,410,"–¿“¿“¿“¿“¿");
+   txDrawText(595,375,780,410,"√ê√Ä√í√Ä√í√Ä√í√Ä√í√Ä");
  }
  void drawSmile(HDC Smile)
  {
@@ -226,11 +226,11 @@ void drawDiologMarmok()
 }
 void drawTytru()
 {
-   //‘ŒÕ
+   //√î√é√ç
    txSetColor(TX_BLACK);
    txSetFillColor (TX_BLACK);
    txRectangle(0,0,805,605);
-   //·ÛÍ‚‡
+   //√°√≥√™√¢√†
    txSetColor(TX_WHITE, 3);
    txSetFillColor(TX_WHITE);
    txLine(50,205,625,216);
@@ -246,15 +246,15 @@ void drawTytru()
 void drawTexttytru(int y)
 {
    txSetColor(TX_GREEN, 3);
-   txDrawText(200,y-300,550,y-250,"—œŒÕ—Œ–-HAZBIHcompany");
+   txDrawText(200,y-300,550,y-250,"√ë√è√é√ç√ë√é√ê-HAZBIHcompany");
    txSetColor(TX_BLUE, 3);
-   txDrawText(200,y-200,550,y-150,"—÷”Õ¿–»—“-¬¿Õ≈ _¿–“≈ÿŒ ");
+   txDrawText(200,y-200,550,y-150,"√ë√ñ√ì√ç√Ä√ê√à√ë√í-√Ç√Ä√ç√Ö√ä_√Ä√ê√í√Ö√ò√é√ä");
    txSetColor(TX_GRAY, 3);
-   txDrawText(200,y-50,550,y,"¿‘“Œ– »ƒ≈»-Ã‡ËÌ(Ã‡ÏÓÍ)");
+   txDrawText(200,y-50,550,y,"√Ä√î√í√é√ê √à√Ñ√Ö√à-√å√†√∞√®√≠(√å√†√∞√¨√Æ√™)");
    txSetColor(TX_RED, 3);
-   txDrawText(210,y-100,560,y-50,"¿Õ»Ã¿“Œ–-¬¿Õ≈ _¿–“≈ÿŒ ");
+   txDrawText(210,y-100,560,y-50,"√Ä√ç√à√å√Ä√í√é√ê-√Ç√Ä√ç√Ö√ä_√Ä√ê√í√Ö√ò√é√ä");
    txSetColor(TX_PINK, 3);
-   txDrawText(200,y+100,550,y+150,"’”ƒŒ∆Õ» -ÃEƒﬂ");
+   txDrawText(200,y+100,550,y+150,"√ï√ì√Ñ√é√Ü√ç√à√ä-√åE√Ñ√ü");
 
 }
 void drawWiliam1(HDC Wiliam1)
@@ -273,15 +273,15 @@ int main()
     int xKt = 26 ;
 
     HDC Wiliam1 =txLoadImage ("N-TIMER(1).bmp");
-    HDC Smile = txLoadImage ("ËÒÔÛ„.bmp");
-    HDC Avatar2= txLoadImage ("ÒÏ‡ÈÎ.bmp");
-    HDC Avatar= txLoadImage ("‡‚‡Ú‡Í‡.bmp");
-    HDC Mush= txLoadImage ("ÔÓÏÂıË.bmp");
-    HDC Beginning3= txLoadImage ("ÙÓÌ3.bmp");
-    HDC Beginning2= txLoadImage ("ÙÓÌ2.bmp");
-    HDC Beginning= txLoadImage ("ÙÓÌ.bmp");
-    HDC Akr2 = txLoadImage (" ŒÀ¿ÿ2.bmp");
-    HDC Akr = txLoadImage (" ŒÀ¿ÿ.bmp");
+    HDC Smile = txLoadImage ("√®√±√Ø√≥√£.bmp");
+    HDC Avatar2= txLoadImage ("√±√¨√†√©√´.bmp");
+    HDC Avatar= txLoadImage ("√†√¢√†√≤√†√∞√™√†.bmp");
+    HDC Mush= txLoadImage ("√Ø√Æ√¨√•√µ√®.bmp");
+    HDC Beginning3= txLoadImage ("√¥√Æ√≠3.bmp");
+    HDC Beginning2= txLoadImage ("√¥√Æ√≠2.bmp");
+    HDC Beginning= txLoadImage ("√¥√Æ√≠.bmp");
+    HDC Akr2 = txLoadImage ("√ä√é√ã√Ä√ò2.bmp");
+    HDC Akr = txLoadImage ("√ä√é√ã√Ä√ò.bmp");
     {
      drawScreensaver();
      drawAvatar(Avatar);
@@ -394,7 +394,7 @@ int main()
         drawTexttytru(yTexttytru);
 
 
-        yTexttytru=yTexttytru + 5;
+        yTexttytru=yTexttytru - 5;
 
         txSleep(100);
     }
