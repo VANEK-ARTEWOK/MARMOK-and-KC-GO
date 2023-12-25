@@ -301,8 +301,8 @@ int main()
     drawKt(xKt);
     drawKnife(xKnife);
     drawDiologKt();
-    txSleep(200);
-    drawDiologMarmok();
+
+
 
     xKt=xKt + 10;
     xKnife = xKnife + 10;
